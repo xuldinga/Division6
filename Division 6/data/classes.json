@@ -1,0 +1,135 @@
+{
+    "classes": [
+        {
+            "name": "Agent of Hydra",
+            "classType": "DPS",
+            "subtype": "Warrior, Rogue",
+            "basicMeta": "Potence, Growth",
+            "masterMeta": "Unpredictable",
+            "definingAbility": "Heads of Hydra, Blessing of Tiamat, Chaos Hydra Head",
+            "advantage": "Bulletproof",
+            "disadvantage": "Boud to Tiamat Hydra goddess",
+            "book": "Warriors & Rogues",
+            "attributes": {
+                "Strength": {
+                    "value": 20,
+                    "Bonus": "S"
+                },
+                "Endurance": {
+                    "value": 30,
+                    "Bonus": "M"
+                },
+                "Agility": {
+                    "value": 20
+                },
+                "Awareness": {
+                    "value": 30,
+                    "Bonus": "S+M"
+                },
+                "Intelligence": {
+                    "value": 20
+                },
+                "Resilience": {
+                    "value": 30
+                },
+                "Appearance": {
+                    "value": 15
+                },
+                "Charisma": {
+                    "value": 10
+                }
+            },
+            "skills": [
+                "Rituals +1",
+                "Investigations +1",
+                "Swimming +1"
+            ]
+        },
+        {
+            "name": "Abomination",
+            "classType": "Tank",
+            "subtype": "Damned & Forgotten, Fey",
+            "basicMeta": "Leadership, Taunt, Regeneration",
+            "masterMeta": "Stalker",
+            "definingAbility": "Trollish Regeneration- Base Tough AC 9, +15 HP, Regenerate 1D6 during the following: TOR/ Each Minute/ When you crit/ When you fumble/ When you fail any resist/ When you are hit",
+            "advantage": "Huge Size",
+            "disadvantage": "Weakness to fire",
+            "book": "DV6 Tanks",
+            "attributes": {
+                "Strength": {
+                    "value": 30
+                },
+                "Endurance": {
+                    "value": 30
+                },
+                "Agility": {
+                    "value": 20
+                },
+                "Awareness": {
+                    "value": 25
+                },
+                "Intelligence": {
+                    "value": 5
+                },
+                "Resilience": {
+                    "value": 25147
+                },
+                "Appearance_Charisma": {
+                    "value": 5
+                }
+            },
+            "skills": [
+                "Rituals +1",
+                "Investigations +1",
+                "Swimming +1",
+                "Escape +1",
+                ""
+            ]
+        },
+        {
+            "name": "Aquamarine",
+            "classType": "Healer",
+            "subtype": "Symbiotes, Gemmanite",
+            "basicMeta": "Expulsion Healing",
+            "masterMeta": "Triage, Symbiosis",
+            "definingAbility": "Heads of Hydra, Blessing of Tiamat, Chaos Hydra Head",
+            "advantage": "Beautiful Fusion",
+            "disadvantage": "Soft Hearted",
+            "book": "Healers",
+            "attributes": {
+                "Strength": {
+                    "value": 20,
+                    "Bonus": "S"
+                },
+                "Endurance": {
+                    "value": 30,
+                    "Bonus": "M"
+                },
+                "Agility": {
+                    "value": 20
+                },
+                "Awareness": {
+                    "value": 30,
+                    "Bonus": "S+M"
+                },
+                "Intelligence": {
+                    "value": 20
+                },
+                "Resilience": {
+                    "value": 30
+                },
+                "Appearance": {
+                    "value": 15
+                },
+                "Charisma": {
+                    "value": 10
+                }
+            },
+            "skills": [
+                "Rituals +1",
+                "Investigations +1",
+                "Swimming +1"
+            ]
+        }
+    ]
+}

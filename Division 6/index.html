@@ -1,0 +1,91 @@
+<!-- =========================
+ Project Structure (static site)
+ =========================
+ /index.html        (main page with dropdowns, table, details)
+ /data/classes.json (data source)
+ /js/app.js         (logic)
+ /css/styles.css    (optional styling)
+
+ For demo convenience, all files are shown below.
+ In a real project, split them into separate files.
+-->
+
+<!-- =========================
+ index.html
+ ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Class Browser</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <h1>Class Browser</h1>
+  <div class="container">
+    <section id="filters">
+      <select id="filter-name">
+        <option value="">All Names</option>
+      </select>
+      <select id="filter-type">
+        <option value="">All Class Types</option>
+        <option value="DPS">DPS</option>
+        <option value="Healer">Healer</option>
+        <option value="Tank">Tank</option>
+      </select>
+      <select id="filter-book">
+        <option value="">All Books</option>
+        <option value="Damned & Forgotten">Damned & Forgotten</option>
+        <option value="DV6 Symbiotes">DV6 Symbiotes</option>
+        <option value="DV6 Tanks">DV6 Tanks</option>
+        <option value="Mages">Mages</option>
+        <option value="Shapeshifters">Shapeshifters</option>
+        <option value="Healers">Healers</option>
+        <option value="Warriors & Rogues">Warriors & Rogues</option>
+      </select>
+    </section>
+
+    <section>
+      <table id="class-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Class Type</th>
+            <th>Subtype</th>
+            <th>Book</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="details">
+      <h2>Class Details</h2>
+      <table id="details-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Class Type</th>
+            <th>Subtype</th>
+            <th>Basic Meta</th>
+            <th>Master Meta</th>
+            <th>Defining Ability</th>
+            <th>Advantage</th>
+            <th>Disadvantage</th>
+            <th>Book</th>
+          </tr>
+        </thead>
+        <tbody id="details-content">
+          <tr>
+            <td colspan="9">Select a row to see full details.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
