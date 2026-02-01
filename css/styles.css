@@ -1,37 +1,179 @@
-.container {
-    margin: 0 auto;
-    /* center horizontally */
-    max-width: 70%;
-    /* content width = 100% - 2*15% margins */
+/* Page shell: 15% / 70% / 15% */
+.page {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    min-height: 100vh;
 }
 
-/* Table header: blue background, white text */
-table thead th {
-    background-color: #007BFF;
-    /* nice blue */
-    color: white;
+.side {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Put your generated images here */
+.left-panel {
+    background-image: url("../images/Dv.png");
+}
+
+.right-panel {
+    background-image: url("../images/6.png");
+}
+
+.content {
+    box-sizing: border-box;
+    padding: 18px;
+}
+
+/* Simple card feel */
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 14px;
+    margin-bottom: 14px;
+}
+
+/* Filters */
+#filters {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+#filters select {
     padding: 8px;
+    min-width: 180px;
+}
+
+/* Main table */
+#class-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#class-table thead th {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
     text-align: left;
 }
 
-/* Table rows: padding and border */
-table tbody td {
-    padding: 8px;
+#class-table tbody td {
+    padding: 10px;
     border-bottom: 1px solid #ddd;
 }
 
-/* Alternate row colors */
-table tbody tr:nth-child(even) {
+/* Zebra striping */
+#class-table tbody tr:nth-child(even) {
     background-color: #f2f2f2;
-    /* light grey */
 }
 
-table tbody tr:nth-child(odd) {
-    background-color: #ffffff;
-    /* white */
+/* Row hover + selection animation */
+#class-table tbody tr {
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.15s ease;
 }
 
-/* Optional: highlight row on hover */
-table tbody tr:hover {
-    background-color: #e0e0e0;
+#class-table tbody tr:hover {
+    background-color: #e6f0ff;
+}
+
+#class-table tbody tr.selected {
+    background-color: #cce0ff !important;
+    transform: scale(1.01);
+}
+
+/* Attributes full-width within center 70% */
+.attribute-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    /* pixel spacing between attributes */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.attr {
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.attr span:first-child {
+    display: block;
+    font-size: 0.85em;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.attr span:last-child {
+    font-size: 1.2em;
+}
+
+/* Details + Skills side-by-side */
+.details-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* perfectly parallel halves */
+    gap: 16px;
+    align-items: start;
+}
+
+/* Details form layout */
+.details-form {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    row-gap: 10px;
+    column-gap: 12px;
+    margin-top: 10px;
+}
+
+.detail-row {
+    display: contents;
+}
+
+.detail-row label {
+    font-weight: bold;
+    text-align: right;
+    padding-top: 6px;
+}
+
+.detail-value {
+    padding: 6px 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 20px;
+}
+
+/* Skills panel */
+#skills-panel ul {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+}
+
+#skills-panel li {
+    margin-bottom: 6px;
+}
+
+/* Mobile fallback: stack columns */
+@media (max-width: 1000px) {
+    .page {
+        grid-template-columns: 0 100% 0;
+    }
+
+    .side {
+        display: none;
+    }
+
+    .details-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .attribute-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
