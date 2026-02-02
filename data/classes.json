@@ -7,7 +7,7 @@
             "basicMeta": "Potence, Growth",
             "masterMeta": "Unpredictable",
             "definingAbility": "Heads of Hydra, Blessing of Tiamat, Chaos Hydra Head",
-            "1stMainTrait": "Militant, Loyal, Bossy, or Strict",
+            "firstMainTrait": "Militant, Loyal, Bossy, or Strict",
             "advantage": "Bulletproof",
             "disadvantage": "Boud to Tiamat Hydra goddess",
             "book": "Warriors & Rogues",
@@ -36,7 +36,7 @@
                 "Appearance": {
                     "value": 15
                 },
-                "Charisma": {
+                "Appearance_Charisma": {
                     "value": 10
                 }
             },
@@ -58,76 +58,78 @@
             "History": "After losing the 2nd World War, The Nazi Regime splintered and went into hiding all around the world. Arnold Hiemler oversaw the South American occult research division and had been discovering ancient temples and cities lost to the jungle when news of the German defeat came. He immediately declared himself supreme leader and began constructing a grand fortress on top of a large ancient city that laid on one of earth's key ley line points. Then Arnold found what he was looking for a long-lost artifact of immense supernatural power, which upon its application opened a portal to another dimension, Hydronia. The entire base and over 50,000 enslaved locals marched through, and the base fell silent for decades, being reclaimed by the rain forest. Then shortly after the Apocalypse on earth the base lit up and the jungle receded as if frightened if its inhabitants. No longer Nazis, calling themselves the children of Hydra, they are agents of the chaos goddess Tiamat and have been living in a pocket dimension created by her to raise and train a mighty army to take over the now shattered world. Adventuring Agents are spies or renegades out in the world gathering intel ahead of the army, they will pose as Friendly heroes and lost soldiers.",
             "Description": "An Agent of Hydra can blend to look like anyone of their own race.",
             "ClassSlot1": [
-                "1st option",
-                "2nd option",
-                "3rd option",
-                "4th option"
-            ],
-            "ClassSlot1": [
-                "1st option",
-                "2nd option",
-                "3rd option",
-                "4th option"
+                "Adhesion: You can adhere to all surfaces.",
+                "Scout: Free Retest in Notice & Prowl checks.",
+                "Sniper: 1 Retest in Notice & Balance checks.",
+                "Pro Move: Gain Parkour & Treetop Movement.",
+                "Pro Hunter: Track the Untrackable and Pass without a Trace.",
+                "From the Past: ReSlotting EXP & UP costs are 0 before and after each session.",
+                "Through the Haze: See through Illusions, Mirages, Guises, Invisibility and Chameleon.",
+                "Heightened Sense of Sight: Out of Combat; You cannot Fumble in Sight related checks.",
+                "Heightened Sense of Smell: Out of Combat; You cannot Fumble in Smell related checks.",
+                "Heightened Sense of Hearing: Out of Combat; You cannot Fumble in Hearing related checks."
             ],
             "ClassSlot2": [
-                "1st option",
-                "2nd option",
-                "3rd option",
-                "4th option"
+                "Leech Strike [2 Soul, ENHS] +1d6 Damage with next attack and Life Leech 1d6 HP.",
+                "Hydra Strike [3 Mind, ENHS] +1d4 Dmg with next attack and next Unpredictable is free.",
+                "Hydra Effect [2 Body, ENHS] +1d4 Dmg with next attack, forcing a Resist vs Virus.",
+                "Hydra Stack [4 Metas, ENHA] +1d4 Dmg with next attack, grants you 1 stack of Luck.",
+                "Heavy Strike [1 of each Vital, ENHA] Next attack deals +1d4 Dmg per Hydra Head you have active, Stackable."
             ],
             "ClassSlot3": [
-                "1st option",
-                "2nd option",
-                "3rd option",
-                "4th option"
+                "Enhancements are Stackable & Entwinable.",
+                "Renegade Kit: Once per combat gain an additional AA, SA, DA and MA.",
+                "Fatal Weakness: Your attacks must be Defended with the targets lowest AC.",
+                "Hydra Armor [1 of each Vital, SB] Hydra Heads have a Counterattack on their listed initiative.",
+                "Not Round Here: Attacks can't be Countered nor forced to Reroll and your Damage cannot be Mitigated nor Regenerated.",
+                "Punch, Punch, Bite [3 Lost Vitals] Leap onto a target within your Move, attacking with 2 Claw and 1 Bite Attack on the same initiative."
             ],
             "ClassSlot4": [
-                "1st option",
-                "2nd option",
-                "3rd option",
-                "4th option"
+                "Comical Head [1 of each Vital, SB] Attacks on initiative 6, forcing a Resist vs Befuddle.",
+                "Screaming Head [1 of each Vital, SB] Attacks on initiative 6, forcing a Resist vs Silence.",
+                "Web Head [1 of each Vital, SB] Attacks on initiative 6, forcing a Resist vs Webbed.",
+                "Malformed Head (1 of each Vital, SB] Attacks on initiative 6, forcing a Resist vs Slow.",
+                "Stone Head [1 of each Vital, SB] Attacks on initiative 6, forcing a Resist vs Petrified."
             ],
             "ClassSlot5": [
-                "1st option",
-                "2nd option",
-                "3rd option",
-                "4th option"
+                "Deaf Head [1 of each Vital, SB] Attacks on initiative 5, forcing a Resist vs Deaf.",
+                "Forgetful Head [1 of each Vital, SB] Attacks on initiative 5, forcing a Resist vs Forget.",
+                "Sleepy Head [1 of each Vital, SB] Attacks on initiative 5, forcing a Resist vs Sleep.",
+                "Stunning Head [1 of each Vital, SB] Attacks on initiative 5, forcing a Resist vs Stun.",
+                "Smushed Head [1 of each Vital, SB] Attacks on initiative 5, forcing a Resist vs Trample."
             ],
             "ClassSlot6": [
-                "1st option",
-                "2nd option",
-                "3rd option",
-                "4th option"
+                "Good Head [1 of each Vital, SB] Attacks on initiative 4, forcing a Resist vs Awe.",
+                "Evil Head [1 of each Vital, SB] Attacks on initiative 4, forcing a Resist vs Fear.",
+                "Crazy Head [1 of each Vital, SB] Attacks on initiative 4, forcing a Resist vs Stress.",
+                "Psycho Head [1 of each Vital, SBJ Attacks on initiative 4, forcing a Resist vs Enraged."
             ],
             "ClassSlot7": [
-                "1st option",
-                "2nd option",
-                "3rd option",
-                "4th option"
+                "Luck: Whenever you Critical or Fumble gain 1 stack of Luck.",
+                "Valor: Whenever you Critical or Fumble gain 1 stack of Valor.",
+                "Perfection: Whenever you Critical or Fumble gain 1 stack of Perfection.",
+                "Strikes & Damages: +1 to Hit & Damage for the round; after a successful attack, Stackable."
             ],
             "ClassSlot8": [
-                "1st option",
-                "2nd option",
-                "3rd option",
-                "4th option"
+                "Attack Power [Restore all Vitals, P-Up] Gain Attacks on initiatives 3 and 8.",
+                "DPS Power [Restore all Metas, P-Up] +5 to Hit, Damage & Effects apply automatically.",
+                "Hydra Power [Restore all HP, P-Up] Your main AA attacks with all active Heads all at once."
             ],
             "ClassSlot9": [
-                "1st option",
-                "2nd option",
-                "3rd option",
-                "4th option"
+                "Red Head [1 of each Vital, SB] Attacks on initiative 3, forcing a Resist vs Enflamed.",
+                "Black Head [1 of each Vital, SB] Attacks on initiative 3, forcing a Resist vs Acid.",
+                "Blue Head [1 of each Vital, SB] Attacks on initiative 3, forcing a Resist vs Electrified.",
+                "White Head [1 of each Vital, SB] Attacks on initiative 3, forcing a Resist vs Chilled.",
+                "Green Head [1 of each Vital, SB] Attacks on initiative 3, forcing a Resist vs Poison."
             ],
             "ClassSlot10": [
-                "1st option",
-                "2nd option",
-                "3rd option",
-                "4th option"
+                "Full Grace: Reroll Fumbles when attacking.",
+                "Enhancements cost 1 less Resource Bubble.",
+                "Strikes & Damages: +1 to Hit & Damage for the round; after a successful attack, Stackable."
             ],
             "ClassSlot11": [
-                "1st option",
-                "2nd option",
-                "3rd option",
-                "4th option"
+                "Hydra Aura [1 of each Vital, Aura] The Partys attacks force a Resist vs the same Status Effect as the Hydra Head that attacked on the same initiative, they do.",
+                "Tiamat Form [1 Willpower, TZ] You change into a Hydra, +12ft & 5000lbs, x2 your HP & WT."
             ],
             "ImageURL": "./images/classImages/Hydrasoldier.jpg"
         },
@@ -138,7 +140,7 @@
             "basicMeta": "Leadership, Taunt, Regeneration",
             "masterMeta": "Stalker",
             "definingAbility": "Trollish Regeneration- Base Tough AC 9, +15 HP, Regenerate 1D6 during the following: TOR/ Each Minute/ When you crit/ When you fumble/ When you fail any resist/ When you are hit",
-            "1stMainTrait": "Simple, Childish, Dumb, or Idiotic",
+            "firstMainTrait": "Simple, Childish, Dumb, or Idiotic",
             "advantage": "Huge Size",
             "disadvantage": "Weakness to fire",
             "book": "DV6 Tanks",
@@ -257,31 +259,32 @@
             "basicMeta": "Expulsion Healing",
             "masterMeta": "Triage, Symbiosis",
             "definingAbility": "Heads of Hydra, Blessing of Tiamat, Chaos Hydra Head",
-            "1stMainTrait": "Deep, Shallow, Emotional, or Caring",
+            "firstMainTrait": "Deep, Shallow, Emotional, or Caring",
             "advantage": "Beautiful Fusion",
             "disadvantage": "Soft Hearted",
             "book": "Healers",
             "attributes": {
                 "Strength": {
-                    "value": 30
-                },
-                "Endurance": {
-                    "value": 30
-                },
-                "Agility": {
                     "value": 20
                 },
-                "Awareness": {
+                "Endurance": {
                     "value": 25
+                },
+                "Agility": {
+                    "value": 15
+                },
+                "Awareness": {
+                    "value": 20
                 },
                 "Intelligence": {
-                    "value": 5
+                    "value": 15
                 },
                 "Resilience": {
-                    "value": 25
+                    "value": 30,
+                    "Bonus": "S+M"
                 },
-                "Appearance": {
-                    "value": 5
+                "Appearance_Charisma": {
+                    "value": 15
                 }
             },
             "skills": [

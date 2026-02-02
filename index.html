@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
   <div class="page">
 
     <!-- LEFT 15% PANEL -->
@@ -18,7 +17,7 @@
 
     <!-- CENTER 70% CONTENT -->
     <main class="content">
-      <img src="./images/Dv6Banner.png" width="100%" height="300px">
+      <img src="../images/Dv6Banner.png" width="100%" height="300px">
       <h1>Class Browser</h1>
 
       <!-- Filters -->
@@ -44,6 +43,10 @@
           <option value="DV6 Symbiotes">DV6 Symbiotes</option>
           <option value="Healers">Healers</option>
         </select>
+        <div class="filter-search">
+          <label for="filter-subtype-search">Search Subtypes</label>
+          <input id="filter-subtype-search" type="text" placeholder="Type to filter by subtype..." autocomplete="off" />
+        </div>
       </section>
 
       <!-- Main table -->
@@ -61,17 +64,26 @@
         </table>
       </section>
 
-      <section>
+      <section class="lore-card">
+        <div class="lore-text">
+          <h3>History</h3>
+          <div id="detail-history" class="lore-box">Select a class.</div>
 
+          <h3>Description</h3>
+          <div id="detail-description" class="lore-box">Select a class.</div>
+        </div>
+
+        <div class="lore-image">
+          <img id="detail-image" alt="Class artwork" />
+          <div id="detail-image-fallback" class="image-fallback">No image set</div>
+        </div>
       </section>
-
 
       <!-- Details + Skills parallel -->
       <section class="details-layout">
         <!-- Class Details (left half) -->
         <section id="details" class="card">
           <h2>Class Details</h2>
-
           <div class="details-form">
             <div class="detail-row"><label>Name</label>
               <div id="detail-name" class="detail-value">Select a class…</div>
@@ -83,7 +95,7 @@
               <div id="detail-subtype" class="detail-value"></div>
             </div>
             <div class="detail-row"><label>1st Main Traits</label>
-              <div id="detail-1stMainTrait" class="detail-value"></div>
+              <div id="detail-firstMainTrait" class="detail-value"></div>
             </div>
             <div class="detail-row"><label>Basic Meta</label>
               <div id="detail-basicMeta" class="detail-value"></div>
@@ -114,6 +126,7 @@
           </ul>
         </aside>
       </section>
+
       <section id="attributes" class="card">
         <h2>Attributes</h2>
         <div class="attribute-grid">
@@ -124,12 +137,18 @@
           <div class="attr"><span>INT</span><span id="attr-intelligence"></span></div>
           <div class="attr"><span>RES</span><span id="attr-resilience"></span></div>
           <div class="attr"><span>APP&CHA</span><span id="attr-appearance"></span></div>
-
         </div>
       </section>
-    </main>
 
-    <!-- RIGHT 15% PANEL -->
+      <section class="slots-card">
+        <h3>Class Slots</h3>
+        <div id="slots-container" class="slots-container">
+          <div class="slots-empty">Select a class to view slot options.</div>
+        </div>
+      </section>
+
+    </main>
+    <!-- RIGHT 15% PANE -->
     <aside class="side right-panel" aria-label="Division 6 right art panel"></aside>
   </div>
 

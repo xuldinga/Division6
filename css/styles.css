@@ -159,6 +159,113 @@
     margin-bottom: 6px;
 }
 
+
+/* ===== Lore card: history+description stacked, image on right ===== */
+.lore-card {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    background: #fff;
+}
+
+.lore-box {
+    background: #f7f7f7;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 60px;
+    white-space: pre-wrap;
+}
+
+.lore-image {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 260px;
+    border: 1px solid #dedede;
+    background: #f2f2f2;
+}
+
+.lore-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    /* show only if image exists */
+}
+
+.image-fallback {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: #666;
+    font-style: italic;
+}
+
+/* ===== Slots section ===== */
+.slots-card {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    background: #fff;
+}
+
+.slots-container {
+    display: grid;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.slot-block {
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    padding: 10px;
+    background: #fafafa;
+}
+
+.slot-title {
+    margin: 0 0 8px;
+    font-weight: 800;
+}
+
+.slot-block ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.slots-empty {
+    color: #666;
+    font-style: italic;
+}
+
+.filter-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-search label {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.filter-search input {
+    padding: 7px 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    min-width: 240px;
+}
+
+.lore-image img {
+    cursor: zoom-in;
+}
+
 /* Mobile fallback: stack columns */
 @media (max-width: 1000px) {
     .page {
