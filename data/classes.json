@@ -7,6 +7,7 @@
             "basicMeta": "Potence, Growth",
             "masterMeta": "Unpredictable",
             "definingAbility": "Heads of Hydra, Blessing of Tiamat, Chaos Hydra Head",
+            "1stMainTrait": "Militant, Loyal, Bossy, or Strict",
             "advantage": "Bulletproof",
             "disadvantage": "Boud to Tiamat Hydra goddess",
             "book": "Warriors & Rogues",
@@ -42,8 +43,93 @@
             "skills": [
                 "Rituals +1",
                 "Investigations +1",
-                "Swimming +1"
-            ]
+                "Swimming +1",
+                "Disguise +1",
+                "Etiquette +1",
+                "Tracking +1",
+                "Climbing +1",
+                "Impersonation +1",
+                "Detect Ambush +1",
+                "Counter Tracking +1",
+                "Military Intelligence +1",
+                "Lore Religion +1",
+                "Lore Hydra +1"
+            ],
+            "History": "After losing the 2nd World War, The Nazi Regime splintered and went into hiding all around the world. Arnold Hiemler oversaw the South American occult research division and had been discovering ancient temples and cities lost to the jungle when news of the German defeat came. He immediately declared himself supreme leader and began constructing a grand fortress on top of a large ancient city that laid on one of earth's key ley line points. Then Arnold found what he was looking for a long-lost artifact of immense supernatural power, which upon its application opened a portal to another dimension, Hydronia. The entire base and over 50,000 enslaved locals marched through, and the base fell silent for decades, being reclaimed by the rain forest. Then shortly after the Apocalypse on earth the base lit up and the jungle receded as if frightened if its inhabitants. No longer Nazis, calling themselves the children of Hydra, they are agents of the chaos goddess Tiamat and have been living in a pocket dimension created by her to raise and train a mighty army to take over the now shattered world. Adventuring Agents are spies or renegades out in the world gathering intel ahead of the army, they will pose as Friendly heroes and lost soldiers.",
+            "Description": "An Agent of Hydra can blend to look like anyone of their own race.",
+            "ClassSlot1": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot1": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot2": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot3": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot4": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot5": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot6": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot7": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot8": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot9": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot10": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot11": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ImageURL": "./images/classImages/Hydrasoldier.jpg"
         },
         {
             "name": "Abomination",
@@ -52,6 +138,7 @@
             "basicMeta": "Leadership, Taunt, Regeneration",
             "masterMeta": "Stalker",
             "definingAbility": "Trollish Regeneration- Base Tough AC 9, +15 HP, Regenerate 1D6 during the following: TOR/ Each Minute/ When you crit/ When you fumble/ When you fail any resist/ When you are hit",
+            "1stMainTrait": "Simple, Childish, Dumb, or Idiotic",
             "advantage": "Huge Size",
             "disadvantage": "Weakness to fire",
             "book": "DV6 Tanks",
@@ -72,7 +159,7 @@
                     "value": 5
                 },
                 "Resilience": {
-                    "value": 25147
+                    "value": 25
                 },
                 "Appearance_Charisma": {
                     "value": 5
@@ -83,8 +170,85 @@
                 "Investigations +1",
                 "Swimming +1",
                 "Escape +1",
-                ""
-            ]
+                "Climbing +1",
+                "Jumping +1",
+                "Tracking +1",
+                "Acrobatics +1",
+                "Detect Ambush +1",
+                "Military Intelligence +1",
+                "Land Navigation +1",
+                "Lore: Monsters +1",
+                "Lore Bridges +1"
+            ],
+            "History": "A century before the apocalypse the European government had a secret war with a long lost race of Bridge Trolls, awakened by the breaking of circles and rituals put in place centuries before, through deforestation and development. The trolls were burned and destroyed to the last and their King was caged and enslaved, placed in a ring of fire, locked away deep beneath Britain. Trapped for decades until sold to the UEC, at which point he was tested in every conceivable way. The King was found to be A sexual and so was forced to spawn more test subjects, it was soon discovered that the Trolls Regeneration didn't exist while they were in their birth cocoon and the UEC surgeons removed most of the newborn's brains, those that survived became loyal almost unkillable monsters with the minds of simple small children. The UEC never allows Abominations into the cities nor complexes, they are used primarily in many Wastes bound units and most treat them decent. Adventuring Abominations most likely lost their entire human detail/unit and now must roam the wastes as monsters, some are lucky enough to be found by adventurers before they are forced into madness or cannibalism and can be loyal companions.",
+            "Description": "Large hulking Troll covered in green moss like fur and hair.",
+            "ClassSlot1": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot2": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot3": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot4": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot5": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot6": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot7": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot8": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot9": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot10": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot11": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ImageURL": "./images/classImages/abomination.jpg"
         },
         {
             "name": "Aquamarine",
@@ -93,43 +257,117 @@
             "basicMeta": "Expulsion Healing",
             "masterMeta": "Triage, Symbiosis",
             "definingAbility": "Heads of Hydra, Blessing of Tiamat, Chaos Hydra Head",
+            "1stMainTrait": "Deep, Shallow, Emotional, or Caring",
             "advantage": "Beautiful Fusion",
             "disadvantage": "Soft Hearted",
             "book": "Healers",
             "attributes": {
                 "Strength": {
-                    "value": 20,
-                    "Bonus": "S"
+                    "value": 30
                 },
                 "Endurance": {
-                    "value": 30,
-                    "Bonus": "M"
+                    "value": 30
                 },
                 "Agility": {
                     "value": 20
                 },
                 "Awareness": {
-                    "value": 30,
-                    "Bonus": "S+M"
+                    "value": 25
                 },
                 "Intelligence": {
-                    "value": 20
+                    "value": 5
                 },
                 "Resilience": {
-                    "value": 30
+                    "value": 25
                 },
                 "Appearance": {
-                    "value": 15
-                },
-                "Charisma": {
-                    "value": 10
+                    "value": 5
                 }
             },
             "skills": [
                 "Rituals +1",
                 "Investigations +1",
-                "Swimming +1"
-            ]
+                "Swimming +1",
+                "Sewing +1",
+                "First Aid +1",
+                "Medicine +1",
+                "Anatomy +1",
+                "Surgery +1",
+                "Herbalism +1",
+                "Cooking +1",
+                "Sea Navigation +1",
+                "Oceanography +1",
+                "Lore Aquatic Life +1"
+            ],
+            "History": "Gemanites are an ancient race of Krystal Symbiotes that have evolved from single cell organism gemstone like creatures that existed on earth since its beginning, staying near the Earth's core. Only rising it surface radiation levels spike, once there they require hosts to survive. The hosts can be anything with a mind. However, they cannot host plant life and have a dramatic effect on the environment, which crystallizes as it is drained of biomass and energy. Ninety Nine percent of all beings infected with a Gemanite become slobbering, hive controlled drones. The host consciousness is literally devoured and no longer exists, there is only the Gemanite in full control of the body. Adventuring Gemanites are the exception, they are beings that once merged, the host's will is stronger and he/she retains control of their body. In these cases the Symbiote is little more than a tool for the host and doesn't exert control over the mind or body.",
+            "Description": "You resemble your Race in everyway, except that you have small light blue crystal structures protruding from bony edges such as Elbows, knees, heels, eye brows, feet and hand knuckles and along your spine.",
+            "ClassSlot1": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot2": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot3": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot4": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot5": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot6": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot7": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot8": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot9": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot10": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ClassSlot11": [
+                "1st option",
+                "2nd option",
+                "3rd option",
+                "4th option"
+            ],
+            "ImageURL": "./images/classImages/aquamarine.jpg"
         }
     ]
 }
