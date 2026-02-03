@@ -266,21 +266,66 @@
     cursor: zoom-in;
 }
 
-/* Mobile fallback: stack columns */
-@media (max-width: 1000px) {
+/* ============================= */
+/* MOBILE LAYOUT (screens ≤ 768px)
+/* ============================= */
+@media (max-width: 768px) {
+
+    /* Collapse 15/70/15 into single column */
     .page {
-        grid-template-columns: 0 100% 0;
+        grid-template-columns: 1fr;
     }
 
-    .side {
+    /* Hide decorative side panels on mobile */
+    .side_left-panel,
+    .side_right-panel {
         display: none;
     }
 
+    /* Make content full width */
+    .content {
+        padding: 12px;
+    }
+
+    /* Stack filters vertically */
+    .filters {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .filter-search input {
+        width: 100%;
+        min-width: unset;
+    }
+
+    /* Make table scroll horizontally instead of squishing */
+    #class-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Stack details + skills instead of side-by-side */
     .details-layout {
         grid-template-columns: 1fr;
     }
 
+    /* Lore card becomes vertical */
+    .lore-card {
+        grid-template-columns: 1fr;
+    }
+
+    .lore-image {
+        min-height: 200px;
+    }
+
+    /* Attributes become fewer columns */
     .attribute-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Make skills easier to read */
+    .skills-panel {
+        margin-top: 10px;
     }
 }
