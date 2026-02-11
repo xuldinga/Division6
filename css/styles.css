@@ -149,6 +149,11 @@ body {
 .iframe-shell {
     flex: 1 1 auto;
     min-height: 0;
+    transition: background-image 0.4s ease-in-out;
+    background-image: url("../images/Dv6BannerLRG.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #contentFrame {
@@ -157,6 +162,7 @@ body {
     border: none;
     display: block;
     padding-left: 2%;
+    background: transparent;
 }
 
 /* ============================== */

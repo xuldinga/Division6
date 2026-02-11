@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Division 6</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
 
 <body>
@@ -117,14 +117,21 @@
   <script>
     (function () {
       const frame = document.getElementById('contentFrame');
+      const shell = document.querySelector('.iframe-shell');
+
       document.querySelectorAll('.dv6-nav a[data-target]').forEach(a => {
         a.addEventListener('click', (e) => {
           e.preventDefault();
+
           frame.src = a.getAttribute('data-target');
+
+          // Remove banner once a page is loaded
+          shell.style.backgroundImage = "none";
         });
       });
     })();
   </script>
+
 </body>
 
 </html>
