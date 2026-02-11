@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Division 6 Class Browser</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Paste your entire class browser layout here -->
+    <!-- your .page layout, side panels, filters, tables, attributes, details, skills, etc -->
+    <main class="content">
+        <h1>Class Browser</h1>
+
+        <!-- Filters -->
+        <section id="filters" class="card">
+            <select id="filter-name">
+                <option value="">All Names</option>
+            </select>
+
+            <select id="filter-type">
+                <option value="">All Class Types</option>
+                <option value="DPS">DPS</option>
+                <option value="Healer">Healer</option>
+                <option value="Tank">Tank</option>
+            </select>
+
+            <select id="filter-book">
+                <option value="">All Books</option>
+                <option value="Warriors & Rogues">Warriors & Rogues</option>
+                <option value="Damned & Forgotten">Damned & Forgotten</option>
+                <option value="DV6 Tanks">DV6 Tanks</option>
+                <option value="Mages">Mages</option>
+                <option value="Shapeshifters">Shapeshifters</option>
+                <option value="DV6 Symbiotes">DV6 Symbiotes</option>
+                <option value="Healers">Healers</option>
+            </select>
+            <div class="filter-search">
+                <label for="filter-subtype-search">Search Subtypes</label>
+                <input id="filter-subtype-search" type="text" placeholder="Type to filter by subtype..."
+                    autocomplete="off" />
+            </div>
+        </section>
+
+        <!-- Main table -->
+        <section class="card">
+            <table id="class-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Class Type</th>
+                        <th>Subtype</th>
+                        <th>Book</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section class="lore-card">
+            <div class="lore-text">
+                <h3>History</h3>
+                <div id="detail-history" class="lore-box">Select a class.</div>
+
+                <h3>Description</h3>
+                <div id="detail-description" class="lore-box">Select a class.</div>
+            </div>
+
+            <div class="lore-image">
+                <img id="detail-image" alt="Class artwork" />
+                <div id="detail-image-fallback" class="image-fallback">No image set</div>
+            </div>
+        </section>
+
+        <!-- Details + Skills parallel -->
+        <section class="details-layout">
+            <!-- Class Details (left half) -->
+            <section id="details" class="card">
+                <h2>Class Details</h2>
+                <div class="details-form">
+                    <div class="detail-row"><label>Name</label>
+                        <div id="detail-name" class="detail-value">Select a class…</div>
+                    </div>
+                    <div class="detail-row"><label>Class Type</label>
+                        <div id="detail-classType" class="detail-value"></div>
+                    </div>
+                    <div class="detail-row"><label>Subtype</label>
+                        <div id="detail-subtype" class="detail-value"></div>
+                    </div>
+                    <div class="detail-row"><label>1st Main Traits</label>
+                        <div id="detail-firstMainTrait" class="detail-value"></div>
+                    </div>
+                    <div class="detail-row"><label>Basic Meta</label>
+                        <div id="detail-basicMeta" class="detail-value"></div>
+                    </div>
+                    <div class="detail-row"><label>Master Meta</label>
+                        <div id="detail-masterMeta" class="detail-value"></div>
+                    </div>
+                    <div class="detail-row"><label>Defining Ability</label>
+                        <div id="detail-definingAbility" class="detail-value"></div>
+                    </div>
+                    <div class="detail-row"><label>Advantage</label>
+                        <div id="detail-advantage" class="detail-value"></div>
+                    </div>
+                    <div class="detail-row"><label>Disadvantage</label>
+                        <div id="detail-disadvantage" class="detail-value"></div>
+                    </div>
+                    <div class="detail-row"><label>Book</label>
+                        <div id="detail-book" class="detail-value"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills (right half) -->
+            <aside id="skills-panel" class="card">
+                <h2>Skills</h2>
+                <ul id="skills-list">
+                    <li>Select a class to view skills.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section id="attributes" class="card">
+            <h2>Attributes</h2>
+            <div class="attribute-grid">
+                <div class="attr"><span>STR</span><span id="attr-strength"></span></div>
+                <div class="attr"><span>AGI</span><span id="attr-agility"></span></div>
+                <div class="attr"><span>END</span><span id="attr-endurance"></span></div>
+                <div class="attr"><span>AWR</span><span id="attr-awareness"></span></div>
+                <div class="attr"><span>INT</span><span id="attr-intelligence"></span></div>
+                <div class="attr"><span>RES</span><span id="attr-resilience"></span></div>
+                <div class="attr"><span>APP&CHA</span><span id="attr-appearance"></span></div>
+            </div>
+        </section>
+
+        <section class="slots-card">
+            <h3>Class Slots</h3>
+            <div id="slots-container" class="slots-container">
+                <div class="slots-empty">Select a class to view slot options.</div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

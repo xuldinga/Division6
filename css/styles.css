@@ -1,48 +1,198 @@
-/* Page shell: 15% / 70% / 15% */
+/* ============================== */
+/* BASE RESET + FULL HEIGHT LAYOUT
+/* ============================== */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ============================== */
+/* 15% / 70% / 15% PAGE SHELL
+/* ============================== */
 .page {
     display: grid;
     grid-template-columns: 15% 70% 15%;
-    min-height: 100vh;
+    height: 100vh;
 }
 
-.side {
+/* Side panels (your art) */
+.side_left-panel,
+.side_right-panel {
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Put your generated images here */
-.left-panel {
+.side_left-panel {
     background-image: url("../images/Dv.png");
 }
 
-.right-panel {
+.side_right-panel {
     background-image: url("../images/6.png");
 }
 
-.content {
-    box-sizing: border-box;
-    padding: 18px;
+/* Center column becomes “app layout” */
+.center-shell {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width: 0;
 }
 
-/* Simple card feel */
-.card {
-    background: #ffffff;
-    border: 1px solid #ddd;
+/* ============================== */
+/* TOP NAV MENU (DESKTOP)
+/* ============================== */
+.dv6-nav {
+    flex: 0 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #111;
+    border-bottom: 2px solid #1f4fbf;
+}
+
+/* Remove default bullets */
+.dv6-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top row horizontal */
+.dv6-nav .tier1 {
+    display: flex;
+    gap: 8px;
+    padding: 0 12px;
+    align-items: center;
+}
+
+/* Anchor dropdown positioning */
+.dv6-nav li {
+    position: relative;
+}
+
+/* Menu buttons */
+.dv6-nav .menu-link {
+    display: block;
+    padding: 12px 12px;
+    color: #fff;
+    text-decoration: none;
     border-radius: 6px;
-    padding: 14px;
-    margin-bottom: 14px;
+    user-select: none;
 }
 
-/* Filters */
+/* Hover */
+.dv6-nav .menu-link:hover,
+.dv6-nav .menu-link:focus {
+    background: #1f4fbf;
+    outline: none;
+}
+
+/* Click feedback */
+.dv6-nav .menu-link:active {
+    transform: translateY(1px);
+    background: #163a8f;
+}
+
+/* Dropdown containers */
+.dv6-nav .submenu {
+    display: none;
+    position: absolute;
+    background: #1b1b1b;
+    border: 1px solid #2d2d2d;
+    border-radius: 10px;
+    padding: 6px;
+    min-width: 200px;
+    z-index: 2000;
+}
+
+/* Tier 2 drops down */
+.dv6-nav .tier2 {
+    top: 100%;
+    left: 0;
+}
+
+/* Tier 3 flies right */
+.dv6-nav .tier3 {
+    top: 0;
+    left: 100%;
+    margin-left: 6px;
+}
+
+/* Show on hover */
+.dv6-nav li.has-submenu:hover>.submenu,
+.dv6-nav li.has-submenu:focus-within>.submenu {
+    display: block;
+}
+
+/* Submenu links */
+.dv6-nav .submenu .menu-link {
+    padding: 10px 10px;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.dv6-nav .submenu .menu-link:hover,
+.dv6-nav .submenu .menu-link:focus {
+    background: #2b6cff;
+}
+
+/* ============================== */
+/* IFRAME FILLS REMAINING SPACE
+/* ============================== */
+.iframe-shell {
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+#contentFrame {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    padding-left: 2%;
+}
+
+/* ============================== */
+/* CLASS BROWSER STYLES (center)
+/* ============================== */
+
+/* Filters row */
 #filters {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    padding: 10px 0;
 }
 
 #filters select {
     padding: 8px;
     min-width: 180px;
+}
+
+/* Subtype search box */
+.filter-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-search label {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.filter-search input {
+    padding: 7px 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    min-width: 240px;
 }
 
 /* Main table */
@@ -68,7 +218,7 @@
     background-color: #f2f2f2;
 }
 
-/* Row hover + selection animation */
+/* Hover + selected row */
 #class-table tbody tr {
     cursor: pointer;
     transition: background-color 0.25s ease, transform 0.15s ease;
@@ -83,12 +233,13 @@
     transform: scale(1.01);
 }
 
-/* Attributes full-width within center 70% */
+/* ============================== */
+/* ATTRIBUTES GRID
+/* ============================== */
 .attribute-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
-    /* pixel spacing between attributes */
     width: 100%;
     margin-top: 10px;
 }
@@ -113,16 +264,17 @@
     font-size: 1.2em;
 }
 
-/* Details + Skills side-by-side */
+/* ============================== */
+/* DETAILS + SKILLS LAYOUT
+/* ============================== */
 .details-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* perfectly parallel halves */
     gap: 16px;
     align-items: start;
 }
 
-/* Details form layout */
+/* Details form */
 .details-form {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -149,7 +301,7 @@
     min-height: 20px;
 }
 
-/* Skills panel */
+/* Skills list */
 #skills-panel ul {
     margin: 10px 0 0 0;
     padding-left: 20px;
@@ -159,8 +311,9 @@
     margin-bottom: 6px;
 }
 
-
-/* ===== Lore card: history+description stacked, image on right ===== */
+/* ============================== */
+/* LORE CARD (history + description + image)
+/* ============================== */
 .lore-card {
     margin-top: 16px;
     display: grid;
@@ -195,7 +348,7 @@
     height: 100%;
     object-fit: cover;
     display: none;
-    /* show only if image exists */
+    cursor: zoom-in;
 }
 
 .image-fallback {
@@ -207,7 +360,9 @@
     font-style: italic;
 }
 
-/* ===== Slots section ===== */
+/* ============================== */
+/* SLOTS SECTION
+/* ============================== */
 .slots-card {
     margin-top: 16px;
     border: 1px solid #ddd;
@@ -244,88 +399,45 @@
     font-style: italic;
 }
 
-.filter-search {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.filter-search label {
-    font-weight: 700;
-    white-space: nowrap;
-}
-
-.filter-search input {
-    padding: 7px 10px;
-    border: 1px solid #cfcfcf;
-    border-radius: 6px;
-    min-width: 240px;
-}
-
-.lore-image img {
-    cursor: zoom-in;
-}
-
-/* ============================= */
-/* MOBILE LAYOUT (screens ≤ 768px)
-/* ============================= */
+/* ============================== */
+/* MOBILE LAYOUT (≤ 768px)
+/* ============================== */
 @media (max-width: 768px) {
 
-    /* Collapse 15/70/15 into single column */
     .page {
         grid-template-columns: 1fr;
+        height: auto;
+        min-height: 100vh;
     }
 
-    /* Hide decorative side panels on mobile */
     .side_left-panel,
     .side_right-panel {
         display: none;
     }
 
-    /* Make content full width */
-    .content {
-        padding: 12px;
+    .center-shell {
+        height: 100vh;
     }
 
-    /* Stack filters vertically */
-    .filters {
-        flex-direction: column;
-        gap: 8px;
+    .dv6-nav .tier1 {
+        flex-wrap: wrap;
     }
 
-    .filter-search input {
-        width: 100%;
-        min-width: unset;
-    }
-
-    /* Make table scroll horizontally instead of squishing */
     #class-table {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
     }
 
-    /* Stack details + skills instead of side-by-side */
     .details-layout {
         grid-template-columns: 1fr;
     }
 
-    /* Lore card becomes vertical */
     .lore-card {
         grid-template-columns: 1fr;
     }
 
-    .lore-image {
-        min-height: 200px;
-    }
-
-    /* Attributes become fewer columns */
     .attribute-grid {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    /* Make skills easier to read */
-    .skills-panel {
-        margin-top: 10px;
     }
 }

@@ -4,155 +4,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Division 6 Class Browser</title>
+  <title>Division 6</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <script src="js/app.js" defer></script>
 </head>
 
 <body>
   <div class="page">
-
     <!-- LEFT 15% PANEL -->
-    <aside class="side left-panel" aria-label="Division 6 left art panel"></aside>
+    <aside class="side_left-panel" aria-label="Division 6 left art panel"></aside>
 
-    <!-- CENTER 70% CONTENT -->
-    <main class="content">
-      <img src="./images/Dv6Banner.png" width="100%" height="300px">
-      <h1>Class Browser</h1>
+    <!-- CENTER 70% COLUMN -->
+    <div class="center-shell">
+      <!-- TOP NAV MENU -->
+      <nav class="dv6-nav" aria-label="DV6 Navigation">
+        <ul class="menu tier1">
+          <li class="has-submenu">
+            <a href="#" class="menu-link">What is DV6?</a>
+            <ul class="submenu tier2">
+              <li><a href="#" class="menu-link" data-target="whatIsAndHowTo.html">Introduction and What is a TTPRG</a>
+              </li>
+              <li><a href="#" class="menu-link" data-target="pages/what-is-dv6-option2.html">Brief History of DV6</a>
+              </li>
+              <li><a href="#" class="menu-link" data-target="pages/what-is-dv6-option3.html">Glossary & Terms</a></li>
+            </ul>
+          </li>
 
-      <!-- Filters -->
-      <section id="filters" class="card">
-        <select id="filter-name">
-          <option value="">All Names</option>
-        </select>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">General Rules</a>
+            <ul class="submenu tier2">
+              <li class="has-submenu">
+                <a href="#" class="menu-link">How to Play the Game</a>
 
-        <select id="filter-type">
-          <option value="">All Class Types</option>
-          <option value="DPS">DPS</option>
-          <option value="Healer">Healer</option>
-          <option value="Tank">Tank</option>
-        </select>
+              </li>
+              <li><a href="#" class="menu-link" data-target="pages/general-rules-2.html">Out of Combat Play</a></li>
+              <li><a href="#" class="menu-link" data-target="pages/general-rules-3.html">In Combat Play</a></li>
+              <li><a href="#" class="menu-link" data-target="pages/general-rules-3.html">Combat Terms & Rules</a></li>
+              <li><a href="#" class="menu-link" data-target="pages/general-rules-3.html">Understand Resources</a></li>
+            </ul>
+          </li>
 
-        <select id="filter-book">
-          <option value="">All Books</option>
-          <option value="Warriors & Rogues">Warriors & Rogues</option>
-          <option value="Damned & Forgotten">Damned & Forgotten</option>
-          <option value="DV6 Tanks">DV6 Tanks</option>
-          <option value="Mages">Mages</option>
-          <option value="Shapeshifters">Shapeshifters</option>
-          <option value="DV6 Symbiotes">DV6 Symbiotes</option>
-          <option value="Healers">Healers</option>
-        </select>
-        <div class="filter-search">
-          <label for="filter-subtype-search">Search Subtypes</label>
-          <input id="filter-subtype-search" type="text" placeholder="Type to filter by subtype..." autocomplete="off" />
-        </div>
-      </section>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Effects/Triggers/Lore</a>
+            <ul class="submenu tier2">
+              <li class="has-submenu">
+                <a href="#" class="menu-link">Option1</a>
 
-      <!-- Main table -->
-      <section class="card">
-        <table id="class-table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Class Type</th>
-              <th>Subtype</th>
-              <th>Book</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </section>
+              </li>
+              <li><a href="#" class="menu-link" data-target="pages/effects-2.html">Option2</a></li>
+              <li><a href="#" class="menu-link" data-target="pages/effects-3.html">Option3</a></li>
+            </ul>
+          </li>
 
-      <section class="lore-card">
-        <div class="lore-text">
-          <h3>History</h3>
-          <div id="detail-history" class="lore-box">Select a class.</div>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Character Creation:</a>
+            <ul class="submenu tier2">
+              <li class="has-submenu">
+                <a href="#" class="menu-link" data-target="race-list.html">Race Browser</a>
+              </li>
+              <li><a href="#" class="menu-link" data-target="classes.html">Class Browser</a></li>
+              <li><a href="#" class="menu-link" data-target="pages/character-creation-3.html">Option3</a></li>
+            </ul>
+          </li>
 
-          <h3>Description</h3>
-          <div id="detail-description" class="lore-box">Select a class.</div>
-        </div>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Leveling Up</a>
+            <ul class="submenu tier2">
+              <li class="has-submenu">
+                <a href="#" class="menu-link">Option1</a>
 
-        <div class="lore-image">
-          <img id="detail-image" alt="Class artwork" />
-          <div id="detail-image-fallback" class="image-fallback">No image set</div>
-        </div>
-      </section>
+              </li>
+              <li><a href="#" class="menu-link" data-target="pages/leveling-2.html">Option2</a></li>
+              <li><a href="#" class="menu-link" data-target="pages/leveling-3.html">Option3</a></li>
+            </ul>
+          </li>
 
-      <!-- Details + Skills parallel -->
-      <section class="details-layout">
-        <!-- Class Details (left half) -->
-        <section id="details" class="card">
-          <h2>Class Details</h2>
-          <div class="details-form">
-            <div class="detail-row"><label>Name</label>
-              <div id="detail-name" class="detail-value">Select a class…</div>
-            </div>
-            <div class="detail-row"><label>Class Type</label>
-              <div id="detail-classType" class="detail-value"></div>
-            </div>
-            <div class="detail-row"><label>Subtype</label>
-              <div id="detail-subtype" class="detail-value"></div>
-            </div>
-            <div class="detail-row"><label>1st Main Traits</label>
-              <div id="detail-firstMainTrait" class="detail-value"></div>
-            </div>
-            <div class="detail-row"><label>Basic Meta</label>
-              <div id="detail-basicMeta" class="detail-value"></div>
-            </div>
-            <div class="detail-row"><label>Master Meta</label>
-              <div id="detail-masterMeta" class="detail-value"></div>
-            </div>
-            <div class="detail-row"><label>Defining Ability</label>
-              <div id="detail-definingAbility" class="detail-value"></div>
-            </div>
-            <div class="detail-row"><label>Advantage</label>
-              <div id="detail-advantage" class="detail-value"></div>
-            </div>
-            <div class="detail-row"><label>Disadvantage</label>
-              <div id="detail-disadvantage" class="detail-value"></div>
-            </div>
-            <div class="detail-row"><label>Book</label>
-              <div id="detail-book" class="detail-value"></div>
-            </div>
-          </div>
-        </section>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Slots</a>
+            <ul class="submenu tier2">
+              <li class="has-submenu">
+                <a href="#" class="menu-link">Option1</a>
 
-        <!-- Skills (right half) -->
-        <aside id="skills-panel" class="card">
-          <h2>Skills</h2>
-          <ul id="skills-list">
-            <li>Select a class to view skills.</li>
-          </ul>
-        </aside>
-      </section>
+              </li>
+              <li><a href="#" class="menu-link" data-target="pages/slots-2.html">Option2</a></li>
+              <li><a href="#" class="menu-link" data-target="pages/slots-3.html">Option3</a></li>
+            </ul>
+          </li>
 
-      <section id="attributes" class="card">
-        <h2>Attributes</h2>
-        <div class="attribute-grid">
-          <div class="attr"><span>STR</span><span id="attr-strength"></span></div>
-          <div class="attr"><span>AGI</span><span id="attr-agility"></span></div>
-          <div class="attr"><span>END</span><span id="attr-endurance"></span></div>
-          <div class="attr"><span>AWR</span><span id="attr-awareness"></span></div>
-          <div class="attr"><span>INT</span><span id="attr-intelligence"></span></div>
-          <div class="attr"><span>RES</span><span id="attr-resilience"></span></div>
-          <div class="attr"><span>APP&CHA</span><span id="attr-appearance"></span></div>
-        </div>
-      </section>
+          <li class="has-submenu">
+            <a href="#" class="menu-link">Resources</a>
+            <ul class="submenu tier2">
+              <li class="has-submenu">
+                <a href="#" class="menu-link">Option1</a>
 
-      <section class="slots-card">
-        <h3>Class Slots</h3>
-        <div id="slots-container" class="slots-container">
-          <div class="slots-empty">Select a class to view slot options.</div>
-        </div>
-      </section>
+              </li>
+              <li><a href="#" class="menu-link" data-target="pages/resources-2.html">Option2</a></li>
+              <li><a href="#" class="menu-link" data-target="pages/resources-3.html">Option3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
-    </main>
-    <!-- RIGHT 15% PANE -->
-    <aside class="side right-panel" aria-label="Division 6 right art panel"></aside>
+      <!-- IFRAME fills the remaining space under the nav -->
+      <main class="iframe-shell">
+        <iframe id="contentFrame" name="contentFrame" src="Classes.html" title="DV6 Content"></iframe>
+      </main>
+    </div>
+
+    <!-- RIGHT 15% PANEL -->
+    <aside class="side_right-panel" aria-label="Division 6 right art panel"></aside>
   </div>
 
+  <script>
+    (function () {
+      const frame = document.getElementById('contentFrame');
+      document.querySelectorAll('.dv6-nav a[data-target]').forEach(a => {
+        a.addEventListener('click', (e) => {
+          e.preventDefault();
+          frame.src = a.getAttribute('data-target');
+        });
+      });
+    })();
+  </script>
 </body>
-
 
 </html>
